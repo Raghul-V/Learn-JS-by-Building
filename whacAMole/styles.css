@@ -1,0 +1,16 @@
+.grid {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(5, 150px);
+}
+
+.grid div {
+    height: 150px;
+    border: 2px solid black;
+}
+
+.show {
+    background-color: red;
+}

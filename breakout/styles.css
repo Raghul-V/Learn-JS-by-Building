@@ -1,0 +1,52 @@
+.container {
+    padding: 15px;
+    border: 4px solid;
+    max-width: 800px;
+    margin: auto;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.center-text {
+    position: absolute; 
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.4em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.grid div, .base {
+    height: 30px;
+    background-color: blue;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.ball {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    bottom: 45px;
+    left: 25px;
+}
+
+.base {
+    margin-top: auto;
+    width: calc((100% - 60px) / 5);
+    background-color: purple;
+    position: relative;
+}
